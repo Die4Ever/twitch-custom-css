@@ -1,0 +1,44 @@
+@-moz-document domain("twitch.tv") {
+.video-player--theatre-whispers.video-player--logged-in .video-player__container {
+    bottom: 0;
+}
+
+.video-player--theatre-whispers .player-buttons-right {
+    left: -5rem;
+}
+
+.tw-tower--300 > * {
+    max-width: 50% !important;
+    width: 33.3% !important;
+    min-width: 50rem;
+}
+
+.tw-progress-bar__fill {
+    background: red !important;
+}
+
+.preview-card a.tw-link[data-a-target="preview-card-title-link"]:visited {
+    color: red !important;
+}
+
+.preview-card-game-balloon__content {
+    max-height: 30rem !important;
+}
+
+.preview-card-game-balloon:hover .tw-balloon.tw-hide {
+    display: block !important;
+}
+
+.preview-card-game-balloon .tw-balloon--up {
+    margin-bottom: -8px;
+}
+
+/*.preview-card-game-balloon .tw-balloon .tw-border-b {
+    z-index:1000;
+    position: fixed;
+    top: 10rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}*/
+}
