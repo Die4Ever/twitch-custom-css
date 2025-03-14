@@ -1,4 +1,5 @@
 @-moz-document domain("twitch.tv") {
+
 .video-player--theatre-whispers.video-player--logged-in .video-player__container {
     bottom: 0;
 }
@@ -7,17 +8,18 @@
     left: -5rem;
 }
 
-.tw-tower--300 > * {
-    max-width: 50% !important;
+.tw-tower--300 > *, .tw-tower > div[data-target], div.tw-tower > div.tw-mg-b-2 {
+    /*max-width: 50% !important;
     width: 33.3% !important;
-    min-width: 50rem;
+    min-width: 50rem;*/
+    /*min-width: 40rem !important;*/
 }
 
 .tw-progress-bar__fill {
     background: red !important;
 }
 
-.preview-card a.tw-link[data-a-target="preview-card-title-link"]:visited {
+article a.tw-link[href^="/videos/"]:visited {
     color: red !important;
 }
 
@@ -41,4 +43,35 @@
     right: 0;
     bottom: 0;
 }*/
+
+#sideNav {
+    display: none;
+}
+
+.tw-tower--300 > *, .tw-tower > div[data-target], div.tw-tower > div.tw-mg-b-2 {
+    min-width: 30vw !important;
+}
+
+
+div[data-user="fossabot"] {
+    display:none;
+}
+
+
+/* ======= HIDE ANNOYING CHAT HEADERS, useful for https://kadgar.net/live/ */
+
+@media screen and (max-width: 50rem), (max-height: 18rem) {
+    .stream-chat-header {
+        display: none !important;
+    }
+    
+    .chat-room__content > :not(.chat-list__default,.chat-room__viewer-card,.chat-input) {
+        display: none;
+    }
+    
+    .chat-room__content .community-highlight-stack__scroll-area--disable.scrollable-area.scrollable-area--suppress-scroll-x {
+        display: none !important;
+    }
+}
+
 }
