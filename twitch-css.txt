@@ -60,7 +60,7 @@ div[data-user="fossabot"] {
 
 /* ======= HIDE ANNOYING CHAT HEADERS, useful for https://kadgar.net/live/ */
 
-@media screen and (max-width: 50rem), (max-height: 18rem) {
+@media screen and (max-width: 90rem), (max-height: 45rem) {
     .stream-chat-header {
         display: none !important;
     }
